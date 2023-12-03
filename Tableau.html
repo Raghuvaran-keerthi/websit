@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+      border: 2px solid orange;
+    }
+
+    th, td {
+      border: 2px solid orange;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: orange;
+    }
+
+    .back-button {
+      display: block;
+      margin: 20px auto;
+      background-color: orange;
+      color: black;
+      padding: 10px 20px;
+      border: 2px solid orange;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .back-button:hover {
+      background-color: black;
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#" class="back-button" onclick="goBack()">Back</a>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>Curriculum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Introduction to HTML</td>
+        <td>HTML Basics, Elements, Tags</td>
+      </tr>
+      <tr>
+        <td>CSS Fundamentals</td>
+        <td>Selectors, Box Model, Flexbox</td>
+      </tr>
+      <tr>
+        <td>JavaScript Basics</td>
+        <td>Variables, Functions, Control Flow</td>
+      </tr>
+      <tr>
+        <td>Responsive Web Design</td>
+        <td>Media Queries, Mobile-First Design</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>

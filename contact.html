@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #contact-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 80%;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 2px solid orange;
+      border-radius: 10px;
+      background-color: rgba(255, 165, 0, 0.2);
+      position: relative; 
+    }
+
+    #left-side {
+      width: 45%;
+    }
+
+    #right-side {
+      width: 45%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border: 1px solid orange;
+      border-radius: 5px;
+      background-color: black;
+      color: white;
+    }
+
+    input[type="submit"] {
+      background-color: orange;
+      color: black;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #FFA500;
+    }
+
+    #back-button {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      padding: 8px;
+      border: 1px solid orange;
+      border-radius: 5px;
+      background-color: orange;
+      color: black;
+      cursor: pointer;
+    }
+
+    #back-button:hover {
+      background-color: #FFA500;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="contact-container">
+    <div id="left-side">
+      <h2>Our Institute</h2>
+      <p>Address: 123 Institute Street, Ravulapalem, East godavari, Andra pradesh, India</p>
+      <p>Phone: 9052888774</p>
+      <p>Email:keerthiraghu9999@gmail.com</p>
+    </div>
+    <div id="right-side">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+
+        
+        <div id="back-button" onclick="goBack()">Back</div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>

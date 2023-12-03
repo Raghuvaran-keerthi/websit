@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; 
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(238, 119, 75);
+            padding: 10px;
+        }
+
+        .navbar-left {
+            padding-left: 20px; 
+        }
+
+        .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .a-element {
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid white;
+            text-decoration: none; 
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .a-element:hover {
+            background-color: white;
+            color: rgb(238, 119, 75);
+        }
+
+        .homepage {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 70vh;
+            padding: 40px; 
+        }
+
+        .home-left {
+            max-width: 500px; 
+        }
+
+        .name {
+            font-style: italic;
+            margin-bottom: 10px;
+            color: rgb(238, 119, 75);
+        }
+
+        .par {
+            font-style: italic;
+            text-align: justify;
+        }
+
+        .home-right {
+            max-width: 500px; 
+        }
+
+        .pic {
+            width: 100%; 
+            height: auto;
+            border-radius: 8px; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img class="img" src="https://res.cloudinary.com/dfig4ec1d/image/upload/v1700140881/letter-r-logo-icon-design-template-elements-png_35945_xe9rpn.jpg" alt="Logo">
+        </div>
+
+        <div class="navbar-right">
+            <a class="a-element" href="doup.html">Home</a>
+            <a class="a-element" href="about us.html">About</a>
+            <a class="a-element" href="services.html">Services</a>
+            <a class="a-element" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="homepage">
+        <div class="home-left">
+            <h1 class="name"> Raghavendra Keerthi</h1>
+            <p class="par">A data analyst trainer specializing in teaching data analysis skills, covering concepts, tools, and techniques. Responsibilities include curriculum development, delivering training sessions, staying updated on industry trends, providing support, assessing progress, and customizing training for different audiences. The goal is to equip individuals with the knowledge and skills required for success in the field of data analysis.</p>
+        </div>
+
+        <div class="home-right">
+            <img class="pic" src="https://res.cloudinary.com/dfig4ec1d/image/upload/v1700140450/21551e0025_cro0sz.jpg" alt="My Logo">
+        </div>
+    </div>
+
+</body>
+
+</html>
